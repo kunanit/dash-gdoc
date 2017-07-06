@@ -1,10 +1,13 @@
 # Demo dash app using gdocrevisions
 
+Replay and rewind through the revision history of a Google doc
+![app screenshot](/img/app_screenshot.png)
+
 ## Dependencies
 * [dash](https://github.com/plotly/dash)
 * [gdocrevisions](https://github.com/harvard-vpal/gdocrevisions)
 
-## Setup
+## Local setup
 
 ### Create google service account credentials
 Guide: https://developers.google.com/identity/protocols/OAuth2ServiceAccount
@@ -19,3 +22,6 @@ export GOOGLE_APPLICATION_CREDENTIALS=/path/to/credentials.json
 python gdoc_slider.py
 ```
 Then open `localhost:8050` in a browser to see the app.
+
+## Deployment
+todo
