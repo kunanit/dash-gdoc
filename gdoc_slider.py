@@ -2,7 +2,6 @@ import dash
 import dash_core_components as dcc
 import dash_html_components as html
 import plotly.graph_objs as go
-import functools32
 import gdocrevisions
 from gdocrevisions.replay import RevisionReplayer
 import os
@@ -43,4 +42,4 @@ def update_text(revision_id):
 
 
 if __name__ == '__main__':
-    app.run_server()
+    app.run_server(host='0.0.0.0')
