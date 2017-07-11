@@ -16,6 +16,11 @@ Guide: https://developers.google.com/identity/protocols/OAuth2ServiceAccount
 
 ```
 git clone https://github.com/kunanit/dash-gdoc
+```
+### Setup (method 1)
+```
+# install requirements
+pip install -r requirements.txt
 # set location to json credentials as envrionment variable
 export GOOGLE_APPLICATION_CREDENTIALS=/path/to/credentials.json
 # run the dash app
@@ -23,5 +28,10 @@ python gdoc_slider.py
 ```
 Then open `localhost:8050` in a browser to see the app.
 
-## Deployment
-todo
+### Setup (method 2, with Docker)
+```
+# build docker image
+docker build -t dash-gdoc .
+# run image
+docker run -p 8050:8050 -e GOOGLE_APPLICATION_CREDENTIALS=/path/to/credentials.json dash-gdoc
+```
